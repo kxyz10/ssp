@@ -6,11 +6,20 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="AppStart\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="bootstrap" Version="4.5.3" />
+    <PackageReference Include="Microsoft.AspNet.WebApi" Version="5.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Default.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.html" />
+  </ItemGroup>
 </Project>
